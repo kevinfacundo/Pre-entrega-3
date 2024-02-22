@@ -1,0 +1,121 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #767ffa;
+    color: #000000;
+}
+
+/* color dark bootstrap  212529 */
+
+.nav-link:hover {
+    background-color: #212529;
+    color: #000000;
+    border-radius: 100px;
+    box-shadow: 1px 1px #555a55;
+    padding-top: 10px;
+}
+
+#boton {
+    background-color: visible;
+    backface-visibility: visible;
+    background-color: #92f792;
+
+}
+
+.cartas {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    margin: 15px;
+}
+.card, img{
+    height: 50%;
+}
+
+.d-block {
+    height: 200px;
+    width: 100%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.listas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    place-items: center;
+    font-size: larger;
+    list-style: none;
+    background-color: #cfe6fa;
+    margin-bottom: 20px;
+}
+
+
+.listas1, .listas2 {
+    list-style: none;
+}
+
+
+.footer__ul {
+    list-style: none;
+}
+
+.footer__a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.footer__a:hover {
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px #555a55;
+}
+
+@media (max-width: 380px) {
+
+    html,
+    .body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+    a.navbar-brand {
+        display: flex;
+        visibility: collapse;
+        width: 50%;
+        height: 100px;
+    }
+    #carouselExample {
+        visibility: collapse;
+    }
+
+    .carousel.inner {
+        visibility: collapse;
+    }
+    .footer__a {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+    }
+
+    .listas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+    }
+}
