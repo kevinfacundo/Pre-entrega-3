@@ -10,27 +10,32 @@
 <body class="body">
     <nav class="navbar navbar-expand-sm sticky-top bg-dark ">
         <div class="container-fluid ">
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="boton" class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand text-light " href="../index.html">BEBEDORES ENTRENADOS</a>
+            <a class="navbar-brand text-light collapse navbar-collapse" href="../index.html">BEBEDORES ENTRENADOS</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item ">
-                        <a class="nav-link active text-light" aria-current="page" href="../pages/gallery.html">Galeria</a>
+                        <a class="nav-link active text-light" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link active text-light" href="../pages/contact.html">Contacto</a>
+                        <a class="nav-link active text-light" aria-current="page" href="gallery.html">Galeria</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active text-light" href="contact.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="../pages/aboutUs.html">Sobre nosotros</a>
+                        <a class="nav-link active text-light" href="aboutUs.html">Nosotros</a>
                     </li>
                     <li class="nav-item__compras">
-                        <a class="nav-link active text-light" href="../pages/eShop.html">Compras</a>
+                        <a class="nav-link active text-light" href="eShop.html">Compras</a>
                     </li>
                 </ul>
             </div>
+        </div>
     </nav>
 
     <h1 class="h1-contacto">CONTACTO</h1>
@@ -68,11 +73,13 @@
             <input type="submit" value="Enviar">
         </div>
     </form>
-    <footer class="footer">
+    
+    <footer>
         <nav>
-            <ul>
-                <li><a href="contact.html">Envianos tu pedido y te hacemos descuento al por mayor!</a></li>
-                <li><a href="galery.html">Accede a nuestro catálogo</a></li>
+            <ul class="footer__ul">
+                <li><a class="footer__a" href="pages/contact.html">Envianos tu pedido y te hacemos descuento al por
+                        mayor!</a></li>
+                <li><a a class="footer__a" href="pages/galery.html">Accede a nuestro catálogo</a></li>
             </ul>
         </nav>
     </footer>
